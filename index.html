@@ -8,11 +8,16 @@
     <script src="../../src/js/jquery-3.4.1.js"></script>
     <script>
         $(document).ready(function(){
-            $(".parag").slideUp();
-            $(".parag").slideDown();
+            $(".parag").slideUp().slideDown(); //chaining functions
             $("#para3").css({"border": "1px solid green"});
+            $("h1, h2, h3, h4, h4, h5, h6, h7, h8, h9").addClass("selectMe");
         });
     </script>
+    <style>
+        .selectMe {
+            color: blue;
+        }
+    </style>
 </head>
 <body>
     <h1>Hi there!</h1>
